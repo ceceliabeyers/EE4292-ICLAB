@@ -1,0 +1,158 @@
+ 
+****************************************
+Report : area
+Design : qr_decode
+Version: R-2020.09-SP5
+Date   : Sat Nov 20 19:19:55 2021
+****************************************
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /usr/cadtool/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+
+Number of ports:                          593
+Number of nets:                         15327
+Number of cells:                        13617
+Number of combinational cells:          12376
+Number of sequential cells:              1117
+Number of macros/black boxes:               0
+Number of buf/inv:                       2109
+Number of references:                       2
+
+Combinational area:              27173.584814
+Buf/Inv area:                     2773.727623
+Noncombinational area:            7444.640306
+Macro/Black Box area:                0.000000
+Net Interconnect area:            8618.139646
+
+Total cell area:                 34618.225120
+Total area:                      43236.364765
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ------------------------------------------
+qr_decode                         34618.2251    100.0      0.0000     0.0000  0.0000  qr_decode
+qr_control                         2898.0040      8.4    945.4157   536.2438  0.0000  qr_control
+qr_control/clk_gate_cnt_reg           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_control_mydesign_0
+qr_control/clk_gate_cnt_reg_0         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_control_mydesign_3
+qr_control/clk_gate_pos_all_reg       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_control_mydesign_2
+qr_control/clk_gate_pos_all_reg_0     8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_control_mydesign_1
+qr_control/sram_addr_0              707.5369      2.0    707.5369     0.0000  0.0000  sram_addr_0
+qr_control/sram_addr_90             674.2440      1.9    674.2440     0.0000  0.0000  sram_addr_90
+qr_find                           31720.2211     91.6  17882.3342  6154.0971  0.0000  qr_find
+qr_find/U0                          630.7854      1.8    571.8240    58.9614  0.0000  galois_mydesign_3
+qr_find/U1                          636.1224      1.8    577.1610    58.9614  0.0000  galois_mydesign_2
+qr_find/U2                          627.7357      1.8    568.7743    58.9614  0.0000  galois_mydesign_1
+qr_find/U3                          637.1390      1.8    578.1776    58.9614  0.0000  galois_mydesign_0
+qr_find/Ua                          904.7527      2.6    904.7527     0.0000  0.0000  galois2_mydesign_3
+qr_find/Ub                          880.3548      2.5    880.3548     0.0000  0.0000  galois2_mydesign_2
+qr_find/Uc                          864.3438      2.5    864.3438     0.0000  0.0000  galois2_mydesign_1
+qr_find/Ud                          862.5648      2.5    862.5648     0.0000  0.0000  galois2_mydesign_0
+qr_find/clk_gate_a2_cnt_reg           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_0
+qr_find/clk_gate_a3_cnt_reg           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_94
+qr_find/clk_gate_cnt_S_reg            8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_92
+qr_find/clk_gate_cnt_loc_reg          8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_98
+qr_find/clk_gate_eq2_n_reg_0_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_12
+qr_find/clk_gate_eq2_n_reg_1_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_15
+qr_find/clk_gate_eq2_n_reg_2_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_18
+qr_find/clk_gate_eq3_n_reg_0_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_11
+qr_find/clk_gate_eq3_n_reg_1_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_14
+qr_find/clk_gate_eq3_n_reg_2_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_17
+qr_find/clk_gate_eq4_n_reg_0_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_10
+qr_find/clk_gate_eq4_n_reg_1_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_13
+qr_find/clk_gate_eq4_n_reg_2_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_16
+qr_find/clk_gate_eq5_n_reg_0_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_39
+qr_find/clk_gate_eq5_n_reg_1_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_40
+qr_find/clk_gate_eq5_n_reg_2_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_41
+qr_find/clk_gate_eq5_reg_1_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_36
+qr_find/clk_gate_eq5_reg_2_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_37
+qr_find/clk_gate_eq5_reg_3_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_38
+qr_find/clk_gate_eq6_n_reg_0_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_27
+qr_find/clk_gate_eq6_n_reg_1_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_28
+qr_find/clk_gate_eq6_n_reg_2_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_29
+qr_find/clk_gate_eq6_reg_1_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_24
+qr_find/clk_gate_eq6_reg_2_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_25
+qr_find/clk_gate_eq6_reg_3_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_26
+qr_find/clk_gate_eq7_n_reg_0_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_33
+qr_find/clk_gate_eq7_n_reg_1_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_34
+qr_find/clk_gate_eq7_n_reg_2_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_35
+qr_find/clk_gate_eq7_reg_1_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_30
+qr_find/clk_gate_eq7_reg_2_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_31
+qr_find/clk_gate_eq7_reg_3_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_32
+qr_find/clk_gate_eq8_n_reg_0_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_8
+qr_find/clk_gate_eq8_n_reg_1_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_9
+qr_find/clk_gate_eq8_reg_0_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_5
+qr_find/clk_gate_eq8_reg_1_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_6
+qr_find/clk_gate_eq8_reg_2_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_7
+qr_find/clk_gate_eq9_n_reg_0_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_21
+qr_find/clk_gate_eq9_n_reg_1_         8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_22
+qr_find/clk_gate_eq9_reg_1_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_19
+qr_find/clk_gate_eq9_reg_2_           8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_20
+qr_find/clk_gate_loc2_reg             8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_97
+qr_find/clk_gate_loc3_reg             8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_96
+qr_find/clk_gate_mask_reg             8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_93
+qr_find/clk_gate_message_reg          8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_78
+qr_find/clk_gate_message_reg_0        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_77
+qr_find/clk_gate_message_reg_1        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_76
+qr_find/clk_gate_message_reg_10       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_67
+qr_find/clk_gate_message_reg_11       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_66
+qr_find/clk_gate_message_reg_12       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_65
+qr_find/clk_gate_message_reg_13       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_64
+qr_find/clk_gate_message_reg_14       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_63
+qr_find/clk_gate_message_reg_15       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_62
+qr_find/clk_gate_message_reg_16       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_61
+qr_find/clk_gate_message_reg_17       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_60
+qr_find/clk_gate_message_reg_18       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_59
+qr_find/clk_gate_message_reg_19       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_58
+qr_find/clk_gate_message_reg_2        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_75
+qr_find/clk_gate_message_reg_20       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_57
+qr_find/clk_gate_message_reg_21       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_56
+qr_find/clk_gate_message_reg_22       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_55
+qr_find/clk_gate_message_reg_23       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_54
+qr_find/clk_gate_message_reg_24       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_53
+qr_find/clk_gate_message_reg_25       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_52
+qr_find/clk_gate_message_reg_26       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_51
+qr_find/clk_gate_message_reg_27       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_50
+qr_find/clk_gate_message_reg_28       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_49
+qr_find/clk_gate_message_reg_29       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_48
+qr_find/clk_gate_message_reg_3        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_74
+qr_find/clk_gate_message_reg_30       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_47
+qr_find/clk_gate_message_reg_31       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_46
+qr_find/clk_gate_message_reg_32       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_45
+qr_find/clk_gate_message_reg_33       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_44
+qr_find/clk_gate_message_reg_34       8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_43
+qr_find/clk_gate_message_reg_4        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_73
+qr_find/clk_gate_message_reg_5        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_72
+qr_find/clk_gate_message_reg_6        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_71
+qr_find/clk_gate_message_reg_7        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_70
+qr_find/clk_gate_message_reg_8        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_69
+qr_find/clk_gate_message_reg_9        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_68
+qr_find/clk_gate_sig1_reg             8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_4
+qr_find/clk_gate_sig2_reg             8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_3
+qr_find/clk_gate_sig3_reg             8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_2
+qr_find/clk_gate_sig4_reg             8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_42
+qr_find/clk_gate_synd_a_reg_0_        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_91
+qr_find/clk_gate_synd_a_reg_1_        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_90
+qr_find/clk_gate_synd_a_reg_2_        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_89
+qr_find/clk_gate_synd_a_reg_3_        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_88
+qr_find/clk_gate_synd_a_reg_4_        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_84
+qr_find/clk_gate_synd_a_reg_5_        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_83
+qr_find/clk_gate_synd_a_reg_6_        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_82
+qr_find/clk_gate_synd_a_reg_7_        8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_81
+qr_find/clk_gate_synd_reg_0_          8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_87
+qr_find/clk_gate_synd_reg_1_          8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_86
+qr_find/clk_gate_synd_reg_2_          8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_85
+qr_find/clk_gate_synd_reg_4_          8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_80
+qr_find/clk_gate_synd_reg_5_          8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_79
+qr_find/clk_gate_synd_reg_7_          8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_1
+qr_find/clk_gate_xor_a_reg            8.6409      0.0      3.5580     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_23
+qr_find/de                          793.1834      2.3    793.1834     0.0000  0.0000  qr_demask
+--------------------------------  ----------  -------  ----------  ---------  ------  ------------------------------------------
+Total                                                  27173.5848  7444.6403  0.0000
+
+1

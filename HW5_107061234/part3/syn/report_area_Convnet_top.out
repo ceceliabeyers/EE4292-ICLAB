@@ -1,0 +1,238 @@
+ 
+****************************************
+Report : area
+Design : Convnet_top
+Version: R-2020.09-SP5
+Date   : Sun Dec  5 06:28:20 2021
+****************************************
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /usr/cadtool/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+
+Number of ports:                         5930
+Number of nets:                         64272
+Number of cells:                        50782
+Number of combinational cells:          48613
+Number of sequential cells:              2054
+Number of macros/black boxes:               0
+Number of buf/inv:                       9822
+Number of references:                      12
+
+Combinational area:             140396.513951
+Buf/Inv area:                    13631.521786
+Noncombinational area:           14197.246311
+Macro/Black Box area:                0.000000
+Net Interconnect area:           60340.032871
+
+Total cell area:                154593.760262
+Total area:                     214933.793133
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black-
+                                  Total        Total    national     national    boxes   Design
+--------------------------------  -----------  -------  -----------  ----------  ------  ----------------------------------------------------------------------------------------------------------------------------
+Convnet_top                       154593.7603    100.0    1329.1732   3310.4799  0.0000  Convnet_top
+control                               81.5802      0.1      50.5747     31.0056  0.0000  control
+conv_ctrl                         149228.2720     96.5   23160.3970   7033.9434  0.0000  conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8
+conv_ctrl/clk_gate_bias_reg            8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_5
+conv_ctrl/clk_gate_cnt_compute_col_reg
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_3
+conv_ctrl/clk_gate_cnt_ofmap_reg       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_1
+conv_ctrl/clk_gate_cnt_read_ch_reg
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_2
+conv_ctrl/clk_gate_cnt_read_col_reg
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_4
+conv_ctrl/clk_gate_cnt_reg             8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_0
+conv_ctrl/clk_gate_weight_reg_0_       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_101
+conv_ctrl/clk_gate_weight_reg_0__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_100
+conv_ctrl/clk_gate_weight_reg_0__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_99
+conv_ctrl/clk_gate_weight_reg_0__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_98
+conv_ctrl/clk_gate_weight_reg_0__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_97
+conv_ctrl/clk_gate_weight_reg_0__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_96
+conv_ctrl/clk_gate_weight_reg_0__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_95
+conv_ctrl/clk_gate_weight_reg_0__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_94
+conv_ctrl/clk_gate_weight_reg_10_      8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_21
+conv_ctrl/clk_gate_weight_reg_10__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_20
+conv_ctrl/clk_gate_weight_reg_10__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_19
+conv_ctrl/clk_gate_weight_reg_10__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_18
+conv_ctrl/clk_gate_weight_reg_10__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_17
+conv_ctrl/clk_gate_weight_reg_10__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_16
+conv_ctrl/clk_gate_weight_reg_10__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_15
+conv_ctrl/clk_gate_weight_reg_10__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_14
+conv_ctrl/clk_gate_weight_reg_11_      8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_13
+conv_ctrl/clk_gate_weight_reg_11__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_12
+conv_ctrl/clk_gate_weight_reg_11__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_11
+conv_ctrl/clk_gate_weight_reg_11__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_10
+conv_ctrl/clk_gate_weight_reg_11__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_9
+conv_ctrl/clk_gate_weight_reg_11__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_8
+conv_ctrl/clk_gate_weight_reg_11__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_7
+conv_ctrl/clk_gate_weight_reg_11__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_6
+conv_ctrl/clk_gate_weight_reg_1_       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_93
+conv_ctrl/clk_gate_weight_reg_1__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_92
+conv_ctrl/clk_gate_weight_reg_1__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_91
+conv_ctrl/clk_gate_weight_reg_1__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_90
+conv_ctrl/clk_gate_weight_reg_1__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_89
+conv_ctrl/clk_gate_weight_reg_1__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_88
+conv_ctrl/clk_gate_weight_reg_1__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_87
+conv_ctrl/clk_gate_weight_reg_1__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_86
+conv_ctrl/clk_gate_weight_reg_2_       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_85
+conv_ctrl/clk_gate_weight_reg_2__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_84
+conv_ctrl/clk_gate_weight_reg_2__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_83
+conv_ctrl/clk_gate_weight_reg_2__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_82
+conv_ctrl/clk_gate_weight_reg_2__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_81
+conv_ctrl/clk_gate_weight_reg_2__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_80
+conv_ctrl/clk_gate_weight_reg_2__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_79
+conv_ctrl/clk_gate_weight_reg_2__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_78
+conv_ctrl/clk_gate_weight_reg_3_       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_77
+conv_ctrl/clk_gate_weight_reg_3__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_76
+conv_ctrl/clk_gate_weight_reg_3__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_75
+conv_ctrl/clk_gate_weight_reg_3__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_74
+conv_ctrl/clk_gate_weight_reg_3__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_73
+conv_ctrl/clk_gate_weight_reg_3__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_72
+conv_ctrl/clk_gate_weight_reg_3__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_71
+conv_ctrl/clk_gate_weight_reg_3__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_70
+conv_ctrl/clk_gate_weight_reg_4_       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_69
+conv_ctrl/clk_gate_weight_reg_4__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_68
+conv_ctrl/clk_gate_weight_reg_4__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_67
+conv_ctrl/clk_gate_weight_reg_4__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_66
+conv_ctrl/clk_gate_weight_reg_4__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_65
+conv_ctrl/clk_gate_weight_reg_4__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_64
+conv_ctrl/clk_gate_weight_reg_4__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_63
+conv_ctrl/clk_gate_weight_reg_4__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_62
+conv_ctrl/clk_gate_weight_reg_5_       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_61
+conv_ctrl/clk_gate_weight_reg_5__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_60
+conv_ctrl/clk_gate_weight_reg_5__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_59
+conv_ctrl/clk_gate_weight_reg_5__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_58
+conv_ctrl/clk_gate_weight_reg_5__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_57
+conv_ctrl/clk_gate_weight_reg_5__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_56
+conv_ctrl/clk_gate_weight_reg_5__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_55
+conv_ctrl/clk_gate_weight_reg_5__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_54
+conv_ctrl/clk_gate_weight_reg_6_       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_53
+conv_ctrl/clk_gate_weight_reg_6__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_52
+conv_ctrl/clk_gate_weight_reg_6__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_51
+conv_ctrl/clk_gate_weight_reg_6__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_50
+conv_ctrl/clk_gate_weight_reg_6__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_49
+conv_ctrl/clk_gate_weight_reg_6__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_48
+conv_ctrl/clk_gate_weight_reg_6__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_47
+conv_ctrl/clk_gate_weight_reg_6__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_46
+conv_ctrl/clk_gate_weight_reg_7_       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_45
+conv_ctrl/clk_gate_weight_reg_7__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_44
+conv_ctrl/clk_gate_weight_reg_7__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_43
+conv_ctrl/clk_gate_weight_reg_7__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_42
+conv_ctrl/clk_gate_weight_reg_7__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_41
+conv_ctrl/clk_gate_weight_reg_7__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_40
+conv_ctrl/clk_gate_weight_reg_7__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_39
+conv_ctrl/clk_gate_weight_reg_7__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_38
+conv_ctrl/clk_gate_weight_reg_8_       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_37
+conv_ctrl/clk_gate_weight_reg_8__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_36
+conv_ctrl/clk_gate_weight_reg_8__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_35
+conv_ctrl/clk_gate_weight_reg_8__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_34
+conv_ctrl/clk_gate_weight_reg_8__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_33
+conv_ctrl/clk_gate_weight_reg_8__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_32
+conv_ctrl/clk_gate_weight_reg_8__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_31
+conv_ctrl/clk_gate_weight_reg_8__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_30
+conv_ctrl/clk_gate_weight_reg_9_       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_29
+conv_ctrl/clk_gate_weight_reg_9__0
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_28
+conv_ctrl/clk_gate_weight_reg_9__1
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_27
+conv_ctrl/clk_gate_weight_reg_9__2
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_26
+conv_ctrl/clk_gate_weight_reg_9__3
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_25
+conv_ctrl/clk_gate_weight_reg_9__4
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_24
+conv_ctrl/clk_gate_weight_reg_9__5
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_23
+conv_ctrl/clk_gate_weight_reg_9__6
+                                       8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_conv_ctrl_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8_mydesign_22
+conv_ctrl/mul                     118152.5602     76.4  114947.8043   3204.7559  0.0000  mul_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_WEIGHT_PER_ADDR9_BIAS_PER_ADDR1_BW_PER_PARAM8
+unshuffle                            644.2551      0.4     538.5312     88.4421  0.0000  unshuffle_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12
+unshuffle/clk_gate_cnt_col_reg         8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_unshuffle_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_mydesign_1
+unshuffle/clk_gate_cnt_row_reg         8.6409      0.0       3.5580      5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_unshuffle_CH_NUM4_ACT_PER_ADDR4_BW_PER_ACT12_mydesign_0
+--------------------------------  -----------  -------  -----------  ----------  ------  ----------------------------------------------------------------------------------------------------------------------------
+Total                                                   140396.5140  14197.2463  0.0000
+
+1

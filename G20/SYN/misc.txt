@@ -1,0 +1,7 @@
+1. Constraint設定
+由於最初訂下的spec為timing能夠在3ns，因此希望合成之timing能夠達到2.5ns。
+Input delay設為1ns，因為模擬之SRAM會於posedge 1ns後將資料送入電路。
+Output delay設為0.5*CLOCK，因為testbench中於negedge時比對輸出結果與答案。
+
+2. 合成策略
+為了使最後整合之電路能夠運作在預期的操作頻率，我們會先將每個module個別進行合成，確保各別都能運作在約2.3ns，若無法達成則切開critical path再進行合成。

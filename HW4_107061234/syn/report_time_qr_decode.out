@@ -1,0 +1,62 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : qr_decode
+Version: R-2020.09-SP5
+Date   : Sat Nov 20 19:19:55 2021
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: srstn (input port clocked by clk)
+  Endpoint: qr_find/clk_gate_synd_a_reg_0_/latch
+            (positive level-sensitive latch clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qr_decode          35000                 saed32hvt_ss0p95v125c
+  qr_find            35000                 saed32hvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  2.8000     2.8000 r
+  srstn (in)                                            0.0000     2.8000 r
+  qr_find/srstn (qr_find)                               0.0000     2.8000 r
+  qr_find/U4687/Y (OAI21X2_HVT)                         0.1373     2.9373 f
+  qr_find/clk_gate_synd_a_reg_0_/EN (SNPS_CLOCK_GATE_HIGH_qr_find_mydesign_91)
+                                                        0.0000     2.9373 f
+  qr_find/clk_gate_synd_a_reg_0_/latch/D (LATCHX1_HVT)
+                                                        0.0000     2.9373 f
+  data arrival time                                                2.9373
+
+  clock clk' (rise edge)                                1.7500     1.7500
+  clock network delay (ideal)                           0.0000     1.7500
+  qr_find/clk_gate_synd_a_reg_0_/latch/CLK (LATCHX1_HVT)
+                                                        0.0000     1.7500 r
+  time borrowed from endpoint                           1.1873     2.9373
+  data required time                                               2.9373
+  --------------------------------------------------------------------------
+  data required time                                               2.9373
+  data arrival time                                               -2.9373
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk' nominal pulse width                              1.7500   
+  library setup time                                   -0.0937   
+  --------------------------------------------------------------
+  max time borrow                                       1.6563   
+  actual time borrow                                    1.1873   
+  --------------------------------------------------------------
+
+
+1

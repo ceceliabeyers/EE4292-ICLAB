@@ -1,0 +1,41 @@
+1.
+模擬共分為Pre-sim與Gate-sim兩個部分，Pre-sim為檢驗RTL的正確性，Gate-sim則是檢測利用RTL跑合成過後所產生的netlist檔的正確性。Pre-sim時需要加入的檔案已列在"presim.f", Gate-sim時需要加入的檔案已寫在"gatesim.f"。
+
+2. Test pattern
+
+Picture size:
+(1) 96x64     (TEST_DATA = 0)
+(2) 91x61     (TEST_DATA = 1)
+(3) 800x600   (TEST_DATA = 2)
+(4) 1920x1280 (TEST_DATA = 3)
+P.S. 因當picture size = 1920x1280時，進行gate-sim與post-sim所需的時間太長，我們將僅進行picture size = 1920x1280的pre-sim模擬。
+
+Sample mode:
+(1) 4:1:1 (SAMPLE_MODE = 0)
+(2) 4:2:0 (SAMPLE_MODE = 1)
+
+Presim範例指令: ncverilog -f presim.f +define+TEST_DATA=0+SAMPLE_MODE=0
+Gatesim範例指令: ncverilog -f gatesim.f +define+TEST_DATA=0+SAMPLE_MODE=0
+Posim範例指令: ncverilog -f posim.f +define+TEST_DATA=0+SAMPLE_MODE=0
+
+3. 模擬策略
+Software:
+利用Python模擬電路執行後的結果，並產生golden data。
+
+Testbench:
+Testbench的測試分為幾個部分:
+(1) Encode
+	首先將測試的圖片資料分成RGB，並分別輸入三個SRAM裡，並且將enable訊號從0變為1，此時將會進行圖片的encode。之後每當RTL design的output "bit_valid_out"不為0時，代表成功產生出一組有效的output。將產生出的output"wdata_23b"與golden data做比對。當所有的有效output皆與golden data相同，且output的數量一致時，代表encode的模擬正確。另外，output也將寫進另一個SRAM供decode使用。
+(2) Decode
+	首先將enable訊號從0變為1，讓電路進行decode，之後Testbench將會等待電路的output "finish"變為1時，代表整個decode已全部結束，然後testbench將會比對SRAM裡存放的data是否與golden data一致。如果一致，代表decode的模擬正確。
+(3) Presim
+	以合成通過之2.5ns進行模擬及Throughput計算。
+(3) Gatesim
+	使用合成後電路以及定義時間的.sdf，以合成通過之2.5ns進行模擬及Throughput計算。
+(4) Posim
+	使用P&R後電路以及定義時間的.sdf，以P&R通過之3.2ns進行模擬及Throughput計算。
+
+4. Log File:
+Presim:  ncverilog_pre_圖片大小_採樣模式.log，共8筆。(Ex: ncverilog_pre_96*64_0.log)
+Gatesim: ncverilog_gate_圖片大小_採樣模式.log，共6筆(因1920*1280測資模擬需大量時間)。(Ex: ncverilog_gate_96*64_0.log)
+Posim:   ncverilog_pos_圖片大小_採樣模式.log，共6筆(因1920*1280測資模擬需大量時間)。(Ex: ncverilog_pos_96*64_0.log)
