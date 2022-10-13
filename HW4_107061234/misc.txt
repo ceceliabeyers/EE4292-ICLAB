@@ -1,8 +1,0 @@
-HW4_107061234
-----------------------------------------
-A(Total area): 43236
-T(TEST_CYCLE): 3.5
-C(Cycle count): 48519
-Performance index(PI) = A*T*C = 7.34*10^9
-----------------------------------------
-Policy1, Rank A, Class A
